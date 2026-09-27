@@ -1,0 +1,53 @@
+:root {
+  --color-bg: #010a13;
+  --color-surface: #0a1428;
+  --color-surface-alt: #091428;
+  --color-border: #1e2328;
+  --color-text: #f0e6d2;
+  --color-text-muted: #a09b8c;
+  --color-blue: #1e90ff;
+  --color-red: #e84057;
+  --color-gold: #c8aa6e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+.app-header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

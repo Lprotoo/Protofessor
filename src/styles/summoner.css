@@ -1,0 +1,139 @@
+/* --- Recherche d'invocateur --- */
+
+.summoner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summoner h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.summoner-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.summoner-region,
+.summoner-name {
+  padding: 8px 12px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text);
+}
+
+.summoner-name {
+  flex: 1;
+  min-width: 200px;
+}
+
+.summoner-form button {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.summoner-form button:hover:not(:disabled) {
+  background: rgba(200, 170, 110, 0.1);
+}
+
+.summoner-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.summoner-error {
+  color: var(--color-red);
+  margin: 0;
+}
+
+.summoner-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.summoner-card img {
+  border-radius: 50%;
+}
+
+.summoner-card-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.summoner-card-level {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.match-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.match {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-left-width: 4px;
+  border-radius: 4px;
+}
+
+.match--win {
+  border-left-color: var(--color-blue);
+}
+
+.match--loss {
+  border-left-color: var(--color-red);
+}
+
+.match img {
+  border-radius: 3px;
+}
+
+.match-champion {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.match-score {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.match-result {
+  margin-left: auto;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.match--win .match-result {
+  color: var(--color-blue);
+}
+
+.match--loss .match-result {
+  color: var(--color-red);
+}
